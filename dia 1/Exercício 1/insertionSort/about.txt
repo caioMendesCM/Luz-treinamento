@@ -1,0 +1,11 @@
+Complexidade temporal: O(n²)
+  Muito parecido com o bubbleSort, a complexidade temporal do insertionSort é de nível O(n²) pelo mesmo motivo que o bubbleSort. 
+
+Complexidade espacial: O(1).
+  O bubbleSort faz apenas uma alocação adicional por vez, então tem complexidade espacial de O(1).
+
+O pior caso acontece em um cenário em que o array esteja organizado de forma inversa a que queremos ordenar, nesse caso o segundo for teria a maior quantidade de iterações.
+
+O melhor caso acontece quando o Array já está ordenado, nesse caso, as iterações só acontecem uma vez, como nesse caso só precisa de um for, a complexidade desce pra O(n).
+
+Rodar esse código com 10.000.000 de registros demoraria anos. 10.000.000²p = 100.000.000.000.000p;

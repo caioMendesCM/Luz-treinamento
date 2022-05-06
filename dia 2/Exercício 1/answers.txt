@@ -1,0 +1,7 @@
+1 - Uma Lista ligada é uma estrutura de dados linear ligada entre si através de ponteiros.
+
+2 - As 3 são listas, as 3 usam ponteiros, as 3 são estruturas de dados.
+
+3 - Os ponteiros são utilizados para fazer referencia a um espaço de memória. Por exemplo, nas linked lists, eles fazem referencia ao endereço do próximo nó.
+
+4 - Escrito no código.

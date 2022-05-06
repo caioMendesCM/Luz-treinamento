@@ -1,0 +1,5 @@
+1 - se quisermos acessar todos os nós antes das pontas, utilizamos pré-ordem, se quisermos o contrário, pós-ordem. Se quisermos ordenado de forma crescente, então em ordem.
+
+2 - todos os métodos de percurso são O(n). O método de search é O(log n) ou O(1). Insert é O(log n) ou O(1) no melhor caso. MinValueNode é O(h), onde h é a altura da árvore. deleteNode é o(h), ou O(n) no por caso. 
+
+3 - lista ligada e arvore binária são estruturas de dados ligadas entre si, a diferença é que a lista ligada é linear e a arvore não.

@@ -1,0 +1,25 @@
+Complexidade temporal: O(n*log(n))
+  O quickSort parecida com a mergeSort, consiste basicamente em duas funções, a partition e a quickSort.
+  A partition consiste em 1 loop for, logo n, que separa um array em dois arrays, sendo um array de números menores que um pivot determinado arbitrariamente e o outro de números maiores que esse mesmo pivot, depois junta esses arrays colocando o pivot entre eles.
+  A quickSort é uma função recursiva que continua se chamando enquanto não satisfazer a condição de parada espeficida, que no caso é quando a parte de baixo e a de cima do array conter sómente uma posição, nesse caso, não teria mais o que ordenar, logo, considerando que uma função condicionalmente recursiva comumente é de nivel O(log(n)), podemos dizer que na maioria dos casos ela é uma log(n).
+  Isso resulta em n*log(n).
+
+Complexidade espacial: in-place;
+  O quickSort só precisa de espaço adicional pra guardar chamadas de funções recursivas, mas não pra manipular o array de entrada.
+
+Para estudar os cenários comum teriamos que testar todas as possibilidades de permutação de arrays e calcular os processos necessarios pra cara array. como o pior cenário é muito dificil de acontecer, e a função so cresce de complexidade nesse cenário, podemos considerar a situação média como n*log(n);
+
+
+O pior cenário acontece quando o pivot selecionado é sempre o maior ou menor número no determinado array, nesse caso, a iteração sempre levaria em consideração o tamanho inteiro do array +- 1.
+No pior cenário, a função sobe de complexidade para O(n²)
+
+O melhor cenário aconteceria quando o pivot selecionado fosse sempre o número médio do array, nesse caso a função se manteria como O(n*log(n)).
+
+a principal diferença do quickSort pro mergeSort é que o quickSort não utiliza espaço adicional pra manipular os arrays, enquanto o mergeSort usa, o que em arrays muito grandes pode acabar custando muita memória.
+
+
+Conclusões:
+
+* Os três primeiros métodos crescem muito rápido e não devem ser utilizados em arrays muito grandes, em compensação eles são muito mais fáceis de implementar, logo, para arrays pequenos ou problemas que não necessitam de muita otimização elas podem ser utizadas, visto que são muito mais fáceis de implementar, principalmente a bubble e a selection Sort.
+
+* Os dois ultimos métodos crescem de maneira mais controlada e são mais indicados para arrays maiores, porém eles são muito mais difíceis de entender, então a não ser que tenha um motivo plausível para se utilizá-los, não vale a pena sacrificar legibilidade e compreensibilidade de código para ganhos muito pequenos de performance.

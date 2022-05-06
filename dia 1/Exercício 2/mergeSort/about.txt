@@ -1,0 +1,9 @@
+Complexidade temporal: O(n*log(n))
+  O mergeSort consiste basicamente em duas funções, a merge e a mergeSort, a merge sort consiste em 3 loops separados, logo 3n, enquanto a mergeSort é uma função recursiva que continua se chamando enquanto não satisfazer a condição de parada espeficida, que no caso é dividir um array de tamanho inicial n a n arrays de tamanho 1. Por exemplo, um array de tamanho 8 precisaria de 3 divisões (8/2 = 4; 4/2 = 2; 2/2 = 1), 3 = log(8), logo ela é uma log(n). isso resultaria em 3n*log(n), porém não precisamos considerar o multiplicador da função, só o grau, logo, n * log(n)
+
+Complexidade espacial: O(n).
+  O mergeSort precisa de espaço adicional igual ao tamanho do array de entrada.
+
+A complexidade temporal segue inalterada em todos os cenários
+
+Rodar esse código com 10.000.000 de registros muito menos que os 3 métodos anteriores, porém ainda demoraria demais. 10.000.000p * log(10.000.000) = ~232.534.966p;

@@ -1,0 +1,11 @@
+Complexidade temporal: O(n²)
+  O bubbleSort precisa iterar o array por uma quantidade de vezes igual ao tamanho do mesmo menos um, e pra cada iteração dessa, precisa iterar mais uma vez pra ordenar os números. Então, em código, isso seria algo como um for aninhado (for(){for(){código}}), o que tem complexidade temporal O(n²).
+
+Complexidade espacial: O(1).
+  O bubbleSort faz apenas uma alocação adicional por vez, então tem complexidade espacial de O(1).
+
+O pior caso acontece em um cenário em que o array esteja organizado de forma inversa a que queremos ordenar, nesse caso o segundo for teria a maior quantidade de iterações.
+
+O melhor caso acontece quando o Array já está ordenado, nesse caso, as iterações só acontecem uma vez, como nesse caso só acontece um for, a complexidade desce pra O(n).
+
+Rodar esse código com 10.000.000 de registros demoraria anos. 10.000.000²p = 100.000.000.000.000p;

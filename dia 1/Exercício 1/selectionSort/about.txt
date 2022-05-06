@@ -1,0 +1,9 @@
+Complexidade temporal: O(n²)
+  O selectionSort funciona da seguinte forma, inicialmente procura o menor numero do array e coloca na primeira posição, depois segue procurando o menor número, porém desconsiderando as posições já prontas e os colocando na primeira posição disponivel. são necessários dois for pra isso, um pra aumentar a posição atual e um para procurar pelo menor numero no array, dessa forma, o método tem complexidade O(n²). 
+
+Complexidade espacial: O(1).
+  O selectionSort faz apenas uma alocação adicional por vez, então tem complexidade espacial de O(1).
+
+O método mantém sua complexidade inalterada idependente do caso.
+
+Rodar esse código com 10.000.000 de registros demoraria anos. 10.000.000²p = 100.000.000.000.000p;

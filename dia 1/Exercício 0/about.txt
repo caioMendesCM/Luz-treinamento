@@ -1,0 +1,21 @@
+malloc é uma função utilizada para alocar memória em heap, e retorna um ponteiro pra o local alocado. Ela recebe um único argumento, a quantidade de memória em bytes a ser alocada.
+
+calloc faz quase a mesma coisa, porém ela limpa a memória alocada. além disso ela recebe dois argumentos, a quantidade de variaveis a serem alocadas e a memória necessária em bytes de uma unica váriavel.
+
+atribuição implícita é feita automaticamente em conversões que podem ser feitas sem perda de informações, por exemplo: 
+int i = 1;
+long j = i;
+
+atribuição explícita é feita manualmente quando precisamos converter um código que pode perder informações durante a conversão, por exemplo:
+
+long i = 1;
+int j = (int) i;
+
+
+Heap é uma memória global e stack é uma memória de escopo. O heap pode ser controlado através de funções como malloc e calloc.
+
+a desalocação de memória no heap só acontece se explicitada no código através da função free, enquanto em stack acontece automaticamente quando o escopo fecha. Ex: uma função retorna.
+
+O stack também gerencia melhor a memória do que o heap, visto que ele tem um gerenciamento eficiente e não fragmentado enquanto o heap fragmenta muito a memória.
+
+O stack possui limite de crescimento, e o heap tem um crescimento dinâmico.
